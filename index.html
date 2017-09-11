@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+
+  <title>Processing Sketches</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <style>
+            /* Google Fonts */
+            @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+            * {
+                margin: 0;
+                padding: 0;
+
+                font-family: 'Montserrat', sans-serif;
+                color: rgb(245, 245, 245);
+            }
+            html,
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                width: 100%;
+                height: 100%;
+
+                background: url('img/background.png');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+
+                background-color: #111;
+            }
+            img {
+              width: 100%;
+              height: 100%;
+            }
+            a:link, a:visited {
+                color: rgb(0, 278, 187);
+            }
+            a:hover, a:active {
+                color: rgb(0, 187, 278);
+            }
+            a:link, a:visited, a:hover, a:active {
+              background-color: transparent;
+              text-decoration: none;
+            }
+            .home-btn {
+                margin: 2vw;
+            }
+  </style>
+</head>
+
+<body>
+  <h1 class="center-align">Processing Sketches</h1>
+  <div class="container">
+    <div class="carousel">
+      <a class="carousel-item">
+        <img class="materialboxed" data-caption="Circuitboard Disk" src="img/gifs/circuitboard-disk.gif">
+      </a>
+      <a class="carousel-item">
+        <img class="materialboxed" data-caption="Buckyball" src="img/gifs/buckyball.gif">
+      </a>
+      <a class="carousel-item">
+        <img class="materialboxed" data-caption="Hexagons" src="img/gifs/hexagons.gif">
+      </a>
+      <a class="carousel-item">
+        <img class="materialboxed" data-caption="Stars" src="img/gifs/stars.gif">
+      </a>
+    </div>
+  </div>
+  <h5 class="center-align">Check out the GitHub repository <a href="https://github.com/josedarioxyz/Processing">here</a>.</h5>
+  <h5 class="center-align"><a class="home-btn" href="http://www.darzyx.com/">Home</a></h5>
+  <script>
+      $(document).ready(function(){
+      $('.carousel').carousel();
+
+    });
+  </script>
+</body>
+</html>
